@@ -1,0 +1,21 @@
+package com.day15.datePrograms;
+
+import java.time.LocalDate;
+
+public class ExampleOnDate {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		LocalDate ld = LocalDate.now();
+		System.out.println(ld);
+		
+		System.out.println("From date");
+		System.out.println("Day :"+ld.getDayOfMonth());
+		System.out.println("Month :"+ld.getMonthValue());
+		System.out.println("Month :"+ld.getMonth());
+		System.out.println("Year :"+ld.getYear());
+		System.out.println("Year :"+ld.getDayOfYear());
+	}
+
+}

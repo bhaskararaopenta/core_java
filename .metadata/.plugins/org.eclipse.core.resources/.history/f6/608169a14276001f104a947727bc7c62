@@ -1,0 +1,10 @@
+package com.day14.enumurations;
+
+public class EnumOnDirections {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,35 @@
+import java.util.*;
+
+public class UserInterface {
+
+	public static void main(String[] args) {
+	    
+	    Products p=new Products();
+	    char ch='y';
+		Scanner sc=new Scanner(System.in);
+		
+	do{
+	    System.out.println("1.Add");
+	    System.out.println("2.Display");
+	    System.out.println("3.Exit");
+	    System.out.println("Enter your choice");
+	    int choice=sc.nextInt();
+	    
+	    sc.nextLine();
+	    switch(choice){
+	        case 1: System.out.println("Enter the product");
+	                String prdName=sc.next();
+	                 p.addProductToList(prdName);
+	               break;
+	       case 2: p.sortProductList();
+	           break;
+	       case 3: System.out.println("Thank you for using the application");
+	       ch='Y';
+	           break;
+	    }
+	}while(ch!='Y');
+		
+		
+	}
+	
+}

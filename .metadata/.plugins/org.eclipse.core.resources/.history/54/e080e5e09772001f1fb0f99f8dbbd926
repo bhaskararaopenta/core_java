@@ -1,0 +1,49 @@
+import java.util.Scanner;
+
+public class UserInterface {
+
+	public static void main(String args[]) {
+		UserInterface ui = new UserInterface();
+		Scanner scanner = new Scanner(System.in);
+
+		try {
+			// Read inputs from user
+			System.out.println("Enter the String:");
+			String sentence = scanner.nextLine();
+
+			System.out.println("Enter First Index:");
+			int number1 = scanner.nextInt();
+
+			System.out.println("Enter Second Index:");
+			int number2 = scanner.nextInt();
+
+			// Call the method and print the result
+			String result = ui.extractString(sentence, number1, number2);
+			System.out.println(result);
+		} finally {
+			// Close the scanner
+			scanner.close();
+		}
+	}
+
+	}
+
+	// Method to extract substring from the sentence based on given indices
+	public String extractString(String sentence, int number1, int number2) {
+		String result;
+		try {
+			// Extract substring from the sentence
+			String substring = sentence.substring(number1, number2 + 1);
+			// Construct the result message
+			result = "The output string is " + substring + ".";
+		} catch (StringIndexOutOfBoundsException e) {
+			// Handle invalid index positions
+			result = "Invalid index position.";
+		} finally {
+			// Append the closing message
+			result += " Thanks for using the application.";
+		}
+		return result;
+	}
+
+}

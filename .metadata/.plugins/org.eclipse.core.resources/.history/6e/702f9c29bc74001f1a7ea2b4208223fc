@@ -1,0 +1,24 @@
+package com.day12.fileReaderWriter;
+
+import java.lang.reflect.Method;
+
+public class defghjk {
+
+	public static void main(String[] args) {
+		defghjk dh = new defghjk();
+
+		dh.Method();
+		method1();
+	}
+
+	public void Method() {
+		// TODO Auto-generated method stub
+
+	}
+
+	public static void method1() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

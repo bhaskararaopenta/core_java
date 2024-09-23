@@ -1,0 +1,29 @@
+import java.util.Map;
+import java.util.Scanner;
+
+public class UserInterface {
+	public static void main(String args[]) {
+		CakeOrder co = new CakeOrder();
+		Scanner sc = new Scanner(System.in);
+
+		// Fill the code here
+		System.out.println("Enter number of cakes to be added");
+		int count = sc.nextInt();
+		System.out.println("Enter the cake order details (Order Id:CakeCost)");
+		for (int i = 0; i < count; i++) {
+			String[] orderDetails = sc.nextLine().split(":");
+			String orderId = orderDetails[0];
+			double cakeCost = Double.parseDouble(orderDetails[1]);
+			co.addOrderDetails(orderId, cakeCost);
+		}
+		System.out.println("Enter the cost to search the cake orders");
+		double searchCost = sc.nextDouble();
+
+		Map<String, Double> total = co.findOrdersAboveSpecifiedCost(searchCost);
+		if (total.isEmpty()) {
+			System.out.println("no cakes orders found");
+		} else {
+			total.forEach((t, u) -> System.out.println(t + " " + u));
+		}
+	}
+}

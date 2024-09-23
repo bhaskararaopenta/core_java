@@ -1,0 +1,14 @@
+package com.day15.datePrograms;
+
+import java.time.LocalDate;
+
+public class ExampleOnCustomFormat {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		LocalDate d = LocalDate.now();
+		System.out.println("current date :"+d);
+	}
+
+}

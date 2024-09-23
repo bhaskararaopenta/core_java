@@ -1,0 +1,13 @@
+package com.day14.enumurations;
+
+enum Days {
+	MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY
+}
+
+public class ExampleOnEnum {
+
+	public static void main(String[] args) {
+		Days d = Days.FRIDAY;
+		System.out.println(d);
+	}
+}

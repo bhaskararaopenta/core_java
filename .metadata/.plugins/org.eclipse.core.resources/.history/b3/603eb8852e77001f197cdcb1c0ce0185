@@ -1,0 +1,23 @@
+package com.day15.datePrograms;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Scanner;
+
+public class DateConvertionBasedOnOurReq {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Read data in string using d/MM/YYYY");
+		String dt = sc.next(); // 16/03/2024
+
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("d/MM/YYYY");
+
+		// convert String to locatDate
+
+		LocalDate localDate = LocalDate.parse(dt, formatter);
+		System.out.println(localDate);
+		sc.close();
+	}
+}

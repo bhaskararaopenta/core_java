@@ -1,0 +1,55 @@
+import java.util.*;
+import java.util.Map.Entry;
+
+public class Car {
+
+	Map<String, Integer> carMap = new TreeMap<String, Integer>();
+
+	// Include getter and setter
+	public Map<String, Integer> getCarMap() {
+		return carMap;
+	}
+
+	public void setCarMap(Map<String, Integer> carMap) {
+		this.carMap = carMap;
+	}
+
+	public void addCar(String name, int num) {
+		// Code here
+		carMap.putIfAbsent(name, num);
+	}
+
+	public int carByName(String name) {
+		Integer value = carMap.getOrDefault(name, -1);
+
+		return value;
+	}
+
+	public List<String> carByCount(int count) {
+		// Code here
+		Set<Entry<String, Integer>> abcd = carMap.entrySet();
+		Iterator<Entry<String, Integer>> dcba = abcd.iterator();
+		while (dcba.hasNext()) {
+			Entry<String, Integer> ewww = dcba.next();
+			if (ewww.getValue() == count) {
+				System.out.println(ewww.getKey());
+			}
+
+		}
+		return null;
+
+	}
+
+	public int totalCarsSold() {
+		// Code here
+		int sum = 0;
+		Set<Entry<String, Integer>> abcd = carMap.entrySet();
+		Iterator<Entry<String, Integer>> dcba = abcd.iterator();
+		while (dcba.hasNext()) {
+			Entry<String, Integer> ewww = dcba.next();
+			sum = sum + ewww.getValue();
+		}
+		return sum;
+	}
+
+}

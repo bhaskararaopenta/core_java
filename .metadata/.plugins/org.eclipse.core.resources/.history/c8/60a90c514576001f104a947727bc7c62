@@ -1,0 +1,5 @@
+package com.day14.enumurations;
+
+public enum EnumShape {
+	RECTANGLE, SQUARE, CIRCLE, TRIANGLE
+}

@@ -1,0 +1,39 @@
+import java.util.*;
+
+public class Car {
+
+	Map<String, Integer> carMap = new TreeMap<String, Integer>();
+
+	// Include getter and setter
+	public Map<String, Integer> getCarMap() {
+		return carMap;
+	}
+
+	public void setCarMap(Map<String, Integer> carMap) {
+		this.carMap = carMap;
+	}
+
+	public void addCar(String name, int num) {
+		// Code here
+		carMap.putIfAbsent(name, num);
+	}
+
+	public int carByName(String name) {
+		// Code here
+
+		return 0;
+	}
+
+	public List<String> carByCount(int count) {
+		// Code here
+
+		return null;
+	}
+
+	public int totalCarsSold() {
+		// Code here
+
+		return 0;
+	}
+
+}

@@ -1,0 +1,9 @@
+package com.day12.fileReaderWriter;
+
+public class FileReader1 {
+
+	public static void main(String[] args) {
+		FileReader fr=new FileReader("C:\\Users\\PENRAO\\Desktop\\fileReader\\simple.txt");
+	}
+
+}

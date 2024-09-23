@@ -1,0 +1,5 @@
+package com.day15.lamdaExpression;
+
+public interface XYZ {
+
+}

@@ -1,0 +1,13 @@
+package com.day15.lamdaExpression;
+
+public class MyTestImpl {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MyTest mt=(m)->"Hello"+m;
+		String res = mt.sayHello("Bhaskar");
+		System.out.println(res);
+
+	}
+
+}

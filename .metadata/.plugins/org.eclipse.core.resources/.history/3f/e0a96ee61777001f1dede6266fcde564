@@ -1,0 +1,14 @@
+package com.day15.datePrograms;
+
+import java.time.LocalDateTime;
+
+public class ExampleOnDateAndTime {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		LocalDateTime ldt = LocalDateTime.now();
+		System.out.println(ldt);
+		
+	}
+
+}

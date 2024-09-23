@@ -1,0 +1,13 @@
+package com.day15.datePrograms;
+
+import java.time.LocalTime;
+
+public class ExampleOnTime {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		LocalTime lt = LocalTime.now();
+		System.out.println(lt);
+	}
+
+}

@@ -1,0 +1,21 @@
+package com.day15.lamdaExpression;
+
+import java.util.Optional;
+
+public class ExampleOnOptional2 {
+	public static void main(String[] args) {
+		String msg = null;
+		String msg2 = "rahul";
+		Optional<String> opt = Optional.of(msg2); // of() must pass the non-null value
+		String optOut = opt.get();
+		System.out.println(optOut);
+
+		String msg3 = null;
+		String out1 = Optional.ofNullable(msg3).orElse("smith");
+		System.out.println(out1);
+
+		String s = null;
+		String out2 = Optional.ofNullable(msg).orElseGet(() -> "fazil");
+		System.out.println(out2);
+	}
+}

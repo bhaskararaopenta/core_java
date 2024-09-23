@@ -1,0 +1,37 @@
+import java.util.HashSet;
+import java.util.Iterator;
+
+public class ClassHouseFormation {
+
+	HashSet<String> studSet = new HashSet<String>();
+
+	// Incude getters and setters
+
+	public HashSet<String> getStudSet() {
+		return studSet;
+	}
+
+	public void setStudSet(HashSet<String> studSet) {
+		this.studSet = studSet;
+	}
+
+	public void addName(String details) {
+		studSet.add(details);
+		formTeam();
+	}
+
+	public HashSet<String> formTeam() {
+		Iterator<String> itr = studSet.iterator();
+		while (itr.hasNext()) {
+			String names = itr.next();
+			if (names.indexOf(0) == 'A') {
+				System.out.println(names + ":" + "RED");
+			} else if (names.indexOf(0) == 'I') {
+				System.out.println(names + ":" + "Blue");
+			} else if (names.indexOf(0) == 'Q') {
+				System.out.println(names + ":" + "Green");
+			}
+		}
+		return studSet;
+	}
+}

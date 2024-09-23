@@ -1,0 +1,27 @@
+package com.day14.enumurations;
+
+enum Colors{
+	RED,BLUE,GREEN
+}
+public class ExampleOnEnum2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Colors cs = Colors.BLUE;
+		switch (cs) {
+		case RED:
+			System.out.println("The color is red");
+			break;
+
+		case BLUE:
+			System.out.println("The color is blue");
+			break;
+			
+		case GREEN:
+			System.out.println("The color is green");
+			break;
+		}
+	}
+
+}

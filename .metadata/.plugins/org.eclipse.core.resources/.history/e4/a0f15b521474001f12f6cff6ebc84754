@@ -1,0 +1,27 @@
+package com.day12.fileReaderWriter;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+
+public class BufferedWriter1 {
+	public static void main(String[] args) {
+		try (FileWriter fw = new FileWriter("C:\\core_java_workspace\\collections\\src\\TempBufferedWriter.txt");
+				BufferedWriter bw = new BufferedWriter(fw);) {
+			fw.write(100);
+			fw.write("\n");
+			fw.write("hello");
+			fw.write("\n");
+			fw.write('c');
+			fw.write("\n");
+			char ch[] = { 'a', 'b', 'c', 'd', 'e' };
+			fw.write(ch);
+			fw.write("\n");
+			fw.write("100");
+			fw.write("\n");
+			fw.write("hello my name is bhaskar");
+			fw.flush();
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+}

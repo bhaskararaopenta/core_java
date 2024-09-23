@@ -1,0 +1,21 @@
+package datePrograms;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class DateFormat {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Date d=new Date();
+		System.out.println(d);
+		
+		String pattern="yyyy-mm-dd";
+		SimpleDateFormat simpleDateFormat=new SimpleDateFormat(pattern);
+		String d2 = simpleDateFormat.format(d);
+		System.out.println(d2);
+
+	}
+
+}

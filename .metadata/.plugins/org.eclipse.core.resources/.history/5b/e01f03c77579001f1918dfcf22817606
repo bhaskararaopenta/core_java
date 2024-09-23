@@ -1,0 +1,16 @@
+package com.day15.lamdaExpression;
+
+public class TestOnDefaultandStaticMethod {
+	public static void main(String[] args) {
+		A aobj = new A();
+		aobj.m1();
+		aobj.m2();
+		aobj.display(); // accessing default method
+		B bobj = new B();
+		bobj.m1();
+		bobj.m2();
+		bobj.display(); // accessing default method
+		System.out.println(XYZ.sayHello("Rahul"));// accessing static method
+
+	}
+}

@@ -1,0 +1,16 @@
+package com.day14.enumurations;
+
+public class Test {
+
+	public static void main(String[] args) {
+
+		EnumShape shape = EnumShape.TRIANGLE;
+
+		EnumShape s = shape.TRIANGLE;
+		System.out.println(s);
+
+		int position = s.ordinal();
+		System.out.println("The position is :" + position);
+
+	}
+}
